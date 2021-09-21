@@ -42,12 +42,23 @@
   .col{
     width: 100% !important;
     padding: 0 !important;
+    text-align: center !important;
   }
   .description{
     display: none !important;
   }
   .mobile-description{
 display: block !important;
+
+  }
+  .myname{
+    text-align: center !important;
+  }
+
+  h9{
+    font-size: calc(1.175rem + 1.5vw) !important;
+    margin-top: 5px!important;
+    line-height: 1.6 !important;
   }
 }
 
