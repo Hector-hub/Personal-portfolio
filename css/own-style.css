@@ -23,14 +23,34 @@
   touch-action: manipulation;
 }
 
-
-
-@media (min-width: 768px) {
+@media screen and (max-width: 500px) {
+  
   .button-81 {
-    font-size: 1.125rem;
-    padding: 1rem 2rem ;
+    margin-top: 2rem;
+    font-size: 3.1rem;
+    padding: 2.1rem 2.6rem;
+  }
+  .demo-logo{
+    margin-top: -200px !important;
+    width: 90%;
+    border-width:2rem !important;
+   margin-bottom: 150px !important;
+  }
+  li a{
+    margin: 10px 9px  !important;
+  }
+  .col{
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .description{
+    display: none !important;
+  }
+  .mobile-description{
+display: block !important;
   }
 }
+
 /* nav bar */
 ul {
     list-style-type: none !important;
@@ -47,11 +67,12 @@ ul {
   
   li a {
     display: block !important;
-    font-size: calc(0.775rem + 1.5vw);
+    font-size: calc(0.875rem + 1.5vw);
     color: #e7ad52;
     text-align: center !important;
-    padding: 14px 16px !important;
+    margin: 14px 16px  ;
     text-decoration: none !important;
+    z-index: 10;
   }
  
   h9{
@@ -59,5 +80,5 @@ ul {
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.2;
-    font-size: calc(0.775rem + 1.5vw);
+    font-size: calc(0.175rem + 1.0vw);
 }
