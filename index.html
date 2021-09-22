@@ -5,10 +5,9 @@
 		<meta charset="utf-8">
 
 		<title>Hecrey.com - Hector David Reyes </title>
-		<link  rel="shortcut icon" href="public/perfil.jpeg">
+		<link  rel="shortcut icon" href="public/img/perfil.jpeg">
 		<meta name="description" content="Portafolio Personal">
-		
-
+	
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
@@ -26,9 +25,11 @@
 		<div class="reveal">
 
 		<ul>
-			<li style="  cursor: pointer !important;"><a href="#">HECREY</a></li>
-			<li style="float:right;"><a  href="#about">ABOUT ME</a></li>
-			<li style="float:right;"><a href="#contact">CONTACT</a></li>
+			<li ><a href="#">HECREY</a></li>
+		
+			<li style="float:right;"><a  href="#/about">ABOUT ME</a></li>
+			
+			
 		
 			
 			
@@ -42,12 +43,12 @@
 					
 				<section >
 					<a href="#">
-						<img src="public/perfil.jpeg" alt="logo" width="40%" style="border-radius:75%;border: solid #ddeaf8; border-width:0.7rem;" class="demo-logo">
+						<img src="public/img/perfil.jpeg" alt="logo" width="40%" style="border-radius:75%;border: solid #ddeaf8; border-width:0.7rem;" class="demo-logo">
 					</a>
 					
 					<h3>HI, I'M HECTOR REYES <br>
 						WEB DEVELOPER</h3>
-						<a href="#work"><button class="button-81" role="button">View My Works</button>
+						<a href="#/work"><button class="button-81" role="button">View My Works</button>
 						</a>
 					
 					<p>
@@ -55,31 +56,35 @@
 					</p>
 				</section>
 
-				<section id="about">
+				<section  id="about">
+				   <div  class="about-container"style="" >
 					<h4>Know Me More</h4>
 					<div class="col" style="width: 60%; float: left; padding-right: 10%;">
 						<p class="myname" style="text-align: left;   "  >
 							HI, I'M HECTOR REYES
 							<p class="mobile-description" style="text-align: center;display: none;">
-								I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.	
-						
+								I'm a web developer with a passion for programming. I enjoy developing websites simple, clean and slick, based on PHP, HTML, CSS and JS that provide real value to the end user. The clients have procured exceptional results while working with me.	Always delivering the works with the quality required by the clients.
+
 							</p>
 							<small class="description" style=" text-align: left;display: block;">
-								I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.	
-						
-								</small></p>
+	
+							I'm a web developer with a passion for programming. I enjoy developing websites simple, clean and slick, based on PHP, HTML, CSS and JS that provide real value to the end user. The clients have procured exceptional results while working with me.	Always delivering the works with the quality required by the clients.
+							</small></p>
 							
 					</div>
 					<div class="col "  style="width: 30%;text-align: center; float: left;"> 
-						<div style="" class="r-stack">
+						<div  class="r-stack">
 							<div data-id="box1" style="background:transparent; width: 300px; height: 300px; border-radius: 200px;"></div>
 							<div data-id="box2" style="background: transparent; width: 200px; height: 200px; border-radius: 200px; z-index: 10; "><h1 >22</h1></div>
 							<div data-id="box3" style="background: #e7ad52; width: 100px; height: 100px; border-radius: 200px;"></div>
-						<h4>Years old</h4>
+						<h4 style="margin-bottom:20px;">Years old</h4>
+
 						</div>
-						
-					</div><br><br> <br><br> <br><br><br>
-				
+											
+					</div>
+						<hr style="width:100%;height: 3px;
+  background-color: #fff;">
+
 					
 					<div  style="text-align: left; float: left; width: 33%;" class="col">
 						<small>
@@ -106,18 +111,68 @@
 							
 						</small>
 					</div>
+					</div>
 					
 				</section>
-				<section id="work">
-					<h2>Works</h2>
-					<p>
-					</p>
+				<section  id="work">
+					<h4>Works</h4>
+					<iframe allowfullscreen="true" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay" data-src="public/portfolio/index.html"  style="margin-top:-20px;width: 100%; height: 500px;" src="public/portfolio.html"></iframe>	</section>
+				<section  id="contact">
+					<h4>Contact</h4>
+					
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span style="text-align: left;">CONTACT <br>ME</span>
+            
+          </div>
+          <div class="app-contact">CONTACT INFO : (849) 207-4952</div>
+        </div>
+		
+        <div class="screen-body-item">
+          <div class="app-form">
+			<form id="contact-form">
+            <div class="app-form-group">
+              <input class="app-form-control" required name="user_name" placeholder="NAME" >
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" required name="user_email" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" name="contact_number" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" required name="message" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+             
+              <button type="submit" onclick="" class="app-form-button">SEND</button>
+            </div>
+		</form>
+          </div>
+        </div>
+	
+      </div>
+    </div>
+  
+  </div>
+
 				</section>
-				<section id="contact">
-					<h2>Contact</h2>
-					<p>
-					</p>
-				</section>
+			
 			</section>
 			
 
@@ -137,7 +192,7 @@
 			// https://revealjs.com/initialization/
 			Reveal.initialize({
 				controls: true,
-				progress: true,
+				progress: false,
 				center: true,
 				hash: true,
 
@@ -146,6 +201,56 @@
 			});
 
 		</script>
+<script src="public\sweatalert\sweatalert.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+	(function() {
+		// https://dashboard.emailjs.com/admin/integration
+		emailjs.init('user_xXw9mJrPIqvowOYXoW7Am');
+	})();
+</script>
+<script type="text/javascript">
+	window.onload = function() {
+		document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			// these IDs from the previous steps
+			loader();
+			emailjs.sendForm('service_9mcp4ux', 'template_4cq1bkb', this)
+				.then(function() {
+					console.log('SUCCESS!');
+					window.location.reload();
+				}, function(error) {
+					console.log('FAILED...', error);
+				});
+		});
+	}
+
+	function loader(){
+
+		let timerInterval
+Swal.fire({
+  title: '',
+  html: '',
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+
+	}</script>
 
 	</body>
 </html>
