@@ -124,7 +124,7 @@ body, button, input {
 .container {
   flex: 0 1 700px;
   margin: auto;
-  padding: 10px;
+  padding: 0px;
 }
 
 .screen {
@@ -149,8 +149,8 @@ body, button, input {
 .screen-header {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  background: #fff;
+
+  background: #e7ad52;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -165,19 +165,19 @@ body, button, input {
   height: 8px;
   margin-right: 3px;
   border-radius: 8px;
-  background: white;
+  background: #e7ad52;
 }
 
 .screen-header-button.close {
-  background: #fff;
+  background: #e7ad52;
 }
 
 .screen-header-button.maximize {
-  background: #fff;
+  background: #e7ad52;
 }
 
 .screen-header-button.minimize {
-  background: #fff;
+  background: #e7ad52;
 }
 
 .screen-header-right {
@@ -189,7 +189,7 @@ body, button, input {
   height: 3px;
   margin-left: 2px;
   border-radius: 8px;
-  background: #fff;
+  background: #e7ad52;
 }
 
 .screen-body {
@@ -210,7 +210,7 @@ body, button, input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #fff;
+  color: #e7ad52;
   font-size: 26px;
 }
 
@@ -222,13 +222,19 @@ body, button, input {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #fff;
+  background: #e7ad52;
 }
 
 .app-contact {
   margin-top: auto;
-  font-size: 8px;
-  color: #fff;
+  font-size: 20px;
+  color: #e7ad52;
+}
+.app-input {
+  margin-top: 0;
+  margin-bottom: 0px !important;
+  font-size: 25px;
+  color: #e7ad52;
 }
 
 .app-form-group {
@@ -269,7 +275,7 @@ body, button, input {
   background: none;
   border: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 30px;
   cursor: pointer;
   outline: none;
 }

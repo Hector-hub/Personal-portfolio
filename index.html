@@ -116,7 +116,7 @@
 				</section>
 				<section  id="work">
 					<h4>Works</h4>
-					<iframe allowfullscreen="true" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay" data-src="public/portfolio/index.html"  style="margin-top:-20px;width: 100%; height: 500px;" src="public/portfolio.html"></iframe>	</section>
+					<iframe allowfullscreen="true" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay" data-src="public/portfolio/index.html"  style="margin-top:-20px;width: 100%; height: 500px;" ></iframe>	</section>
 				<section  id="contact">
 					<h4>Contact</h4>
 					
@@ -146,16 +146,23 @@
         <div class="screen-body-item">
           <div class="app-form">
 			<form id="contact-form">
-            <div class="app-form-group">
+            <div class="">
+				
+					<span class="app-input">Name:</span>
               <input class="app-form-control" required name="user_name" placeholder="NAME" >
             </div>
-            <div class="app-form-group">
-              <input class="app-form-control" required name="user_email" placeholder="EMAIL">
+            <div class="">
+				<span  class="app-input">Email:</span>
+				
+              <input class="app-form-control" type="email" required name="user_email" placeholder="EMAIL">
+		
             </div>
-            <div class="app-form-group">
+            <div class="">
+				<span  class="app-input">Contact No:</span>
               <input class="app-form-control" name="contact_number" placeholder="CONTACT NO">
             </div>
-            <div class="app-form-group message">
+            <div class=" message">
+				<span class="app-input">Message:</span>
               <input class="app-form-control" required name="message" placeholder="MESSAGE">
             </div>
             <div class="app-form-group buttons">
@@ -215,21 +222,31 @@
 			event.preventDefault();
 			// these IDs from the previous steps
 			loader();
-			emailjs.sendForm('service_9mcp4ux', 'template_4cq1kb', this)
+			emailjs.sendForm('service_9mcp4ux', 'template_4cq1bkb', this)
 				.then(function() {
 					console.log('SUCCESS!');
-					window.location.reload();
-				}, function(error) {
-					errorSend();
+					successSend();
 					setInterval(function(){
 						window.location.reload();
-					},3000);
+					},2000);
+				}, function(error) {
+					errorSend();
+					
 					
 					console.log('FAILED...', error);
 				});
 		});
 	}
+	function successSend(){
+	    Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Enviado!',
+  showConfirmButton: false,
+  timer: 1500
+})
 
+	}
 	function errorSend(){
 		Swal.fire({
   icon: 'error',
