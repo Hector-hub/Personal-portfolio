@@ -215,16 +215,29 @@
 			event.preventDefault();
 			// these IDs from the previous steps
 			loader();
-			emailjs.sendForm('service_9mcp4ux', 'template_4cq1bkb', this)
+			emailjs.sendForm('service_9mcp4ux', 'template_4cq1kb', this)
 				.then(function() {
 					console.log('SUCCESS!');
 					window.location.reload();
 				}, function(error) {
+					errorSend();
+					setInterval(function(){
+						window.location.reload();
+					},3000);
+					
 					console.log('FAILED...', error);
 				});
 		});
 	}
 
+	function errorSend(){
+		Swal.fire({
+  icon: 'error',
+  title: '',
+  text: 'No pudo ser enviado, verifique su email',
+  footer: ''
+})
+	}
 	function loader(){
 
 		let timerInterval
